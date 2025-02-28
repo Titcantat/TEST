@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Application Web</title>
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon site</title>
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon site web !</h1>
-    <p>Ceci est une page d'exemple pour tester GitHub Pages.</p>
 
+    <!-- En-tête avec une navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="service.html">Nos Services</a></li> <!-- Lien vers service.html -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h1>Bienvenue sur notre site</h1>
+        <p>Voici notre site créé avec GitHub Pages. Nous avons plein de choses à vous montrer !</p>
+
+        <!-- Image d'illustration (si tu as une image) -->
+        <img src="images/ton-image.jpg" alt="Description de l'image" style="width: 300px; height: 200px;">
+    </section>
+
+    <!-- Section Services -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Nous offrons plusieurs services de qualité.</p>
+
+        <!-- Bouton vers la page des services -->
+        <button onclick="window.location.href='service.html'">Voir nos services</button>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question, n'hésitez pas à nous contacter !</p>
+    </section>
+
+    <!-- Lien vers le fichier JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
-<nav>
-    <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<a href="services.html">Nos Services</a>
-<button onclick="afficherAlerte()">Cliquez ici</button>
